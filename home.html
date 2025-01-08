@@ -21,6 +21,13 @@
         .btn-group a {
             margin: 0 5px;
         }
+        @media (max-width: 480px){
+          #cardimg{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+          }
         
     </style>
 </head>
@@ -52,16 +59,18 @@
     <img src="homeimage.png" class="Homeimg" alt="">
     <section class="card-Container"> 
       <div class="Card card-yellow" id="yellowcard"> 
-        <img id="cardimg" src="sleeptracking.jpg" alt="Consult Icon">  
-        <button id="cardbtn" onclick="window.location.href='sleep_tracker.html';">TRACK YOUR SLEEP</button> 
+        <img id="cardimg" src="sleeptracking.jpg" alt="Consult Icon" style=" width: 14rem; 
+  height: 14rem; margin: 20px;">  
+        <button id="cardbtn" onclick="window.location.href='login.html';">Track Your Sleep</button> 
       </div> 
-      <div class="Card card-purple" > 
-        <img id="cardimg" src="mood-disorder.webp" alt="Consult Icon">  
-        <button id="cardbtn" onclick="window.location.href='moodtracker.html';">Track Your Mood</button> 
+      <div class="Card card-purple" id="purplecard"> 
+        <img id="cardimg" src="mood-disorder.webp" style=" width: 14rem; 
+  height: 14rem; margin: 20px;" alt="Consult Icon">  
+        <button id="cardbtn" onclick="window.location.href='login.html';">Track Your Mood</button> 
       </div> 
-    </section> 
+    </section>
     <!-- ABOUT OUR TEAM -->
-     <section class="team" style="margin-bottom: 2rem;">
+    <section class="team" style="margin-bottom: 2rem;">
         <div class="container">
           <h1 class="aboutus" style="margin-top: 2rem; margin-bottom: 4rem;">MEET OUR TEAM</h1>
           <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
@@ -130,11 +139,15 @@
       </div>
   </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="re530nSqm6beQkZJRZwYS";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    (function(){
+      if(!window.chatbase||window.chatbase("getState")!=="initialized")
+      {window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}
+      window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,
+      {get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}}
+    )}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";
+    script.id="re530nSqm6beQkZJRZwYS";script.domain="www.chatbase.co";document.body.appendChild(script)};
+    if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
 </body>
 </html> 

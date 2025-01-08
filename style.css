@@ -110,7 +110,7 @@ body{
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
     .nav {
         flex-direction: column;
     }
@@ -141,15 +141,10 @@ body{
         justify-content: center; 
         padding-top: 3rem;
      }
-    #yellowcard,#purplecard{
+    .card-yellow,.card-purple{
         height: fit-content;
         width: 100%;
         padding: 20px;
-    }
-    .Card > img {
-        width: fit-content;
-        height: 200px;
-        margin-bottom: 10px;
     }
 }
 
@@ -194,8 +189,8 @@ body{
     margin-bottom: 20px;
   } 
   .Card { 
-    width: 500px; 
-    height: 400px;
+    width: 450px; 
+    height: 350px;
     padding: 20px; 
     /* margin-left: 15px; */
     border-radius: 10px; 

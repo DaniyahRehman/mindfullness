@@ -27,19 +27,19 @@ const questions = {
   // Store results for interpretation with descriptive answers
   const results = {
     Anxiety: [
-      { label: "Low Anxiety", description: "You are feeling calm and not anxious. There are no significant signs of anxiety in your responses.", image: "images/anxiety-low.png" },
-      { label: "Moderate Anxiety", description: "You may experience occasional anxiety. It is manageable but might affect your daily activities in some situations.", image: "images/anxiety-moderate.png" },
-      { label: "High Anxiety", description: "You are experiencing significant anxiety. It may be impacting your daily life, and you may want to consider seeking professional help.", image: "images/anxiety-high.png" }
+      { label: "Low Anxiety", description: "You are feeling calm and not anxious. There are no significant signs of anxiety in your responses.", image: "anxiety-low.png" },
+      { label: "Moderate Anxiety", description: "You may experience occasional anxiety. It is manageable but might affect your daily activities in some situations.", image: "anxiety-moderate.png" },
+      { label: "High Anxiety", description: "You are experiencing significant anxiety. It may be impacting your daily life, and you may want to consider seeking professional help.", image: "anxiety-high.png" }
     ],
     Stress: [
-      { label: "Low Stress", description: "You are managing your responsibilities well with minimal stress. Your body and mind are in a relaxed state.", image: "images/stress-low.png" },
-      { label: "Moderate Stress", description: "You are experiencing moderate stress. It may affect your mood or productivity occasionally, but it is still manageable.", image: "images/stress-moderate.png" },
-      { label: "High Stress", description: "You are under significant stress, which might be affecting your physical and mental well-being. You might want to find ways to manage or reduce stress.", image: "images/stress-high.png" }
+      { label: "Low Stress", description: "You are managing your responsibilities well with minimal stress. Your body and mind are in a relaxed state.", image: "stress-low.png" },
+      { label: "Moderate Stress", description: "You are experiencing moderate stress. It may affect your mood or productivity occasionally, but it is still manageable.", image: "stress-moderate.png" },
+      { label: "High Stress", description: "You are under significant stress, which might be affecting your physical and mental well-being. You might want to find ways to manage or reduce stress.", image: "stress-high.png" }
     ],
     Depression: [
-      { label: "Low Depression", description: "You are in a positive mental state with no significant signs of depression. Keep nurturing your emotional well-being.", image: "images/depression-low.png" },
-      { label: "Moderate Depression", description: "You may be experiencing some depressive feelings or lack of interest in activities. Consider speaking to a mental health professional if it persists.", image: "images/depression-moderate.png" },
-      { label: "High Depression", description: "You may be going through significant depressive symptoms. It is essential to seek support and guidance from a mental health professional.", image: "images/depression-high.png" }
+      { label: "Low Depression", description: "You are in a positive mental state with no significant signs of depression. Keep nurturing your emotional well-being.", image: "depression-low.png" },
+      { label: "Moderate Depression", description: "You may be experiencing some depressive feelings or lack of interest in activities. Consider speaking to a mental health professional if it persists.", image: "depression-moderate.png" },
+      { label: "High Depression", description: "You may be going through significant depressive symptoms. It is essential to seek support and guidance from a mental health professional.", image: "depression-high.png" }
     ]
   };
   
@@ -63,10 +63,11 @@ function startAssessment(assessment) {
       questionDiv.innerHTML = `
         <p><strong>${index + 1}. ${question}</strong></p>
         <select id="answer-${index}">
-          <option value="0">Not at all</option>
-          <option value="1">Sometimes</option>
-          <option value="2">Often</option>
-          <option value="3">Very often</option>
+          <option value="0">Select</option>
+          <option value="1">Not at all</option>
+          <option value="2">Sometimes</option>
+          <option value="3">Often</option>
+          <option value="4">Very often</option>
         </select>
       `;
       questionContainer.appendChild(questionDiv);

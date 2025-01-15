@@ -124,6 +124,6 @@ function startAssessment(assessment) {
   // Return to Home
   function goBackToHome() {
     localStorage.clear();
-    window.location.href = "index.html";
+    window.location.href = "homes.html";
   }
   

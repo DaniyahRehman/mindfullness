@@ -63,10 +63,11 @@ function startAssessment(assessment) {
       questionDiv.innerHTML = `
         <p><strong>${index + 1}. ${question}</strong></p>
         <select id="answer-${index}">
-          <option value="0">Not at all</option>
-          <option value="1">Sometimes</option>
-          <option value="2">Often</option>
-          <option value="3">Very often</option>
+          <option value="0">Select</option>
+<option value="1">Not at all</option>
+          <option value="2">Sometimes</option>
+          <option value="3">Often</option>
+          <option value="4">Very often</option>
         </select>
       `;
       questionContainer.appendChild(questionDiv);
